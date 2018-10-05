@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import Splash from "./view/Splash/Splash";
-import Login from "./view/Login/Login";
+import Map from "./view/Map/Map";
 
 export default class Betty extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ export default class Betty extends Component {
     // Start counting when the page is loaded
     this.timeoutHandle = setTimeout(() => {
       // Add your logic for the transition
-      this.setState({ component: <Login /> });
+      this.setState({ component: <Map /> });
     }, 1000);
   }
   componentWillUnmount() {
